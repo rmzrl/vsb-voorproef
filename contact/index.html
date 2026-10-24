@@ -411,8 +411,8 @@
       status.className = 'form__status form__status--' + kind;
     }
     if (params.get('verzonden') === '1') show('ok');
-    // Without a Web3Forms key: build a WhatsApp message from the fields and open it, instead of
-    // posting a request that is bound to fail. The confirmation still comes from the shop.
+    // Without a key: build a WhatsApp message from the fields and open it, instead of posting a
+    // request that is bound to fail. The confirmation still comes from the shop.
     var offline = form.getAttribute('data-offline');
     if (offline) {
       var t = JSON.parse(offline);
